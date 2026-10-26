@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="#FFF8E7">
+
+    <CheckBox
+        android:id="@+id/cbCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:buttonTint="#438BC4"/>
+
+    <TextView
+        android:id="@+id/tvHabitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="#091540"/>
+
+    <ImageButton
+        android:id="@+id/btnNotification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:contentDescription="Напоминание"/>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:contentDescription="Редактировать"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="УДАЛИТЬ"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        app:backgroundTint="#1B2CC1"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#8CC1E9">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Назад"
+            android:backgroundTint="@color/primary_dark_light"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Профиль"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark_light"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        cardview:cardCornerRadius="24dp"
+        cardview:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center"
+            android:background="@color/card_background_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="64sp"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary_light"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: ..."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary_light"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvMemberSince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Присоединился: ..."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary_light"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сбросить пароль"
+        android:backgroundTint="@color/secondary_light"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить аккаунт"
+        android:backgroundTint="@color/primary_dark_light"
+        android:textColor="@android:color/white"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.HabitTrackerrrr" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#8DAED9</item>
+        <item name="colorPrimaryVariant">#1B2CC1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#ABD2FA</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">#1B2CC1</item>
+    </style>
+</resources>

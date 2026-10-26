@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="theme_preference"
+        android:title="Тема оформления"
+        android:summary="Выберите тему приложения"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="system"/>
+
+</PreferenceScreen>

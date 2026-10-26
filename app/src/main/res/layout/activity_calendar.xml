@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#7692FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Назад"
+            android:backgroundTint="#1B2CC1"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Календарь"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите дату"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FFFFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполненные привычки:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FFFFFFFF"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompletedHabits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"/>
+
+    <TextView
+        android:id="@+id/tvNoHabits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нет выполненных привычек за этот день"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
